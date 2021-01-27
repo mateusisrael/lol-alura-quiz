@@ -4,7 +4,7 @@ const Widget = styled.div`
   margin-top: 24px;
   margin-bottom: 24px;
   border: 1px solid ${({ theme }) => theme.colors.primary};
-  background-color: ${({ theme }) => theme.colors.mainBg || '#1C1814'};
+  background-color: ${({ theme }) => theme.colors.mainBg};
   border-radius: 4px;
   overflow: hidden;
   font-family: 'Lato', sans-serif;
@@ -46,8 +46,8 @@ Widget.Form = styled.form`
     border-radius: 3.5px;
     margin-top: 33px;
     padding: 0 0 0 15px;
-    background-color: #1C1814;
-    color: #fff;
+    background-color: ${({ theme }) => theme.colors.mainBg};
+    color: ${({ theme }) => theme.colors.text};
   }
   input:placeholder{
     color: #A0A6CB;
@@ -56,7 +56,7 @@ Widget.Form = styled.form`
 `
 Widget.Button = styled.button`
   margin-top: 25px;
-  background-color: ${({background}) => background};
+  background-color: ${({ background }) => background};
   height: 38px;
   font-size: 14px;
   font-weight: bold;

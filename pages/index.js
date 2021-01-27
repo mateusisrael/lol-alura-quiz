@@ -48,7 +48,7 @@ export default function Home() {
               />
               <Widget.Button
                 type="submit"
-                background={theme.colors.primary}
+                background={'linear-gradient(90deg, #325CEDff, #1D223Fff, #385985ff, #76C1E8ff, #63524Bff, #3A4D6Dff)'}
                 disabled={userName.length === 0}
               >Jogar</Widget.Button>
             </Widget.Form>

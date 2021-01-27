@@ -56,15 +56,18 @@ Widget.Form = styled.form`
 `
 Widget.Button = styled.button`
   margin-top: 25px;
-  background-color: ${({ background }) => background};
+  background-image: linear-gradient(77deg, #325CEDff, #76C1E8ff);
   height: 38px;
   font-size: 14px;
   font-weight: bold;
   color: #fff;
   border-radius: 3.5px;
+  cursor: pointer;
 
   :disabled {
-    background-color: #979797;
+    background-image: none;
+    background-color: #3A4D6Dff;
+    cursor: default;
   }
 `;
 

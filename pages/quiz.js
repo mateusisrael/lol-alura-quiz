@@ -1,4 +1,8 @@
+import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
+import Widget from '../src/components/Widget';
+import QuizBackground from '../src/components/QuizBackground';
+import db from '../db.json';
 
 const Quiz = () => {
   const router = useRouter();
@@ -6,8 +10,10 @@ const Quiz = () => {
 
   return(
     <div>
-      <h1>Quiz Page</h1>
-      <p>Hello {name}</p>
+      <QuizBackground
+        isAnimated={true}
+        backgroundImage={db.bg.primary}>
+      </QuizBackground>
     </div>
   );
 }

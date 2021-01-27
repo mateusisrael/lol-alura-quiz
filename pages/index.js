@@ -31,7 +31,7 @@ export default function Home() {
   }
 
   return (
-    <QuizBackground backgroundImage={db.bg}>
+    <QuizBackground backgroundImage={db.bg.secondary}>
       <QuizContainer>
       <QuizLogo />
         <Widget>
@@ -48,7 +48,6 @@ export default function Home() {
               />
               <Widget.Button
                 type="submit"
-                background={'linear-gradient(90deg, #325CEDff, #1D223Fff, #385985ff, #76C1E8ff, #63524Bff, #3A4D6Dff)'}
                 disabled={userName.length === 0}
               >Jogar</Widget.Button>
             </Widget.Form>

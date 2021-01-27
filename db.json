@@ -1,28 +1,21 @@
 {
-  "bg": "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ashe_9.jpg",
+  "bg": {
+    "primary": "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ashe_9.jpg",
+    "secondary": "https://lolstatic-a.akamaihd.net/frontpage/apps/prod/rg-league-display-2017/en_US/cb24025fade09e3f965776440dffcc65024d3266/assets/img/content/splash/content-original-championillustrations-project-lucian.jpg"
+  },
   "title": "Quiz do LOL",
   "description": "Teste os seus conhecimentos sobre o querido Lolzinho e vamos ver quantos pontos você consegue.",
   "questions": [
     {
       "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
-      "description": "Essa é pra aquecer",
+      "title": "Quantos minions você precisa pra pergar lv2 no Mid e Top?",
+      "description": "Considere somente o XP dos minions",
       "answer": 2,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
-      ]
-    },
-    {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
-      "answer": 0,
-      "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+        "8 minios",
+        "7 minions",
+        "6 minions",
+        "Nenhuma das opções acima"
       ]
     }
   ],
@@ -35,6 +28,10 @@
       "secondary": "#63524Bff",
       "mainBg": "#1D223Fff",
       "text": "#FFFFFF",
+      "gradientButton": [
+        "#C2282Dff",
+        "#FEF867ff"
+      ],
       "contrastText": "#FFFAFF",
       "wrong": "#FF5722",
       "success": "#4CAF50"

@@ -55,8 +55,9 @@ Widget.Form = styled.form`
 
 `
 Widget.Button = styled.button`
-  margin-top: 25px;
-  background-image: linear-gradient(77deg, #325CEDff, #76C1E8ff);
+  margin: ${props => props.margin};
+  background-image: ${props => props.backgroundImage};
+  background-color: ${props => props.backgroundColor};
   height: 38px;
   font-size: 14px;
   font-weight: bold;
@@ -70,6 +71,14 @@ Widget.Button = styled.button`
     cursor: default;
   }
 `;
+
+Widget.AlternativeButton = (props) => {
+  return(
+    <Widget.Button
+      disabled={props.disabled}
+    >{props.children}</Widget.Button>
+  );
+}
 
 Widget.Content = styled.div`
   padding: 24px 32px 32px 32px;

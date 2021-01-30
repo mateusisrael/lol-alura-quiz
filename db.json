@@ -17,6 +17,18 @@
         "6 minions",
         "Nenhuma das opções acima"
       ]
+    },
+    {
+      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
+      "title": "Qual é a rota mais curta de Summoner's Rift?",
+      "description": "Essa é fácil",
+      "answer": 2,
+      "alternatives": [
+        "Top",
+        "Jungle",
+        "Mid",
+        "Bot"
+      ]
     }
   ],
   "external": [
